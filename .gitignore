@@ -1,0 +1,48 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.pnpm-store/
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# generated: shadcn registry output (rebuilt by `pnpm registry`, `pnpm dev` and `pnpm build`)
+/public/r/
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# env files (keep .env.example)
+.env*
+!.env.example
+
+# debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# vercel
+.vercel
+
+# misc
+.DS_Store
+Thumbs.db
+*.pem
+coverage/
+
+# editors
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.swp
+
+# local claude settings
+.claude/settings.local.json
