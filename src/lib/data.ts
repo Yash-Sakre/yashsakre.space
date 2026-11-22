@@ -63,6 +63,7 @@ export const techStack = [
   "html5",
   "css3",
   "python",
+  "rust",
   "react",
   "nextjs",
   "redux",
@@ -70,9 +71,12 @@ export const techStack = [
   "sass",
   "framermotion",
   "electron",
+  "tauri",
   "webrtc",
   "nodejs",
+  "fastify",
   "postgresql",
+  "sqlite",
   "mongodb",
   "prisma",
   "git",
@@ -163,6 +167,16 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    name: "Mnemo",
+    year: "2026",
+    tagline: "Every photo you've ever taken, remembered.",
+    description:
+      "A privacy-first desktop app for Windows and Linux that indexes photo and video libraries of up to 100,000 files for browsing by date, place, and camera — locally, and without ever moving or editing a file. A Tauri 2 shell supervises a Node.js backend over a token-secured loopback API, indexing 10,000 files in 32 seconds and re-scanning an unchanged library in 0.3s. Previews render in memory instead of to disk, HEIC photos decode in WebAssembly worker threads (grid tiles from 1.4s to ~30ms), and perceptual hashing surfaces look-alike duplicates.",
+    tech: ["Tauri", "React", "TypeScript", "Node.js", "Fastify", "SQLite", "Rust"],
+    live: "https://getmnemo.pages.dev",
+    image: "/thumbnails/mnemo.png",
+  },
   {
     name: "Atlas",
     year: "2025",
